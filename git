@@ -1,0 +1,40 @@
+Git is a version control system
+
+1. Easy file recovery
+2. Who introduced an issue and when ?
+3. roll back to previously state
+
+
+- snapshot not difference
+.git folder - project history - Saves snapshots
+
+- Almost every operation are local
+- git has integrity - checksum matching
+- git generally only adds data
+    - As you make changes to your project, the value in the .git folder keep adding
+
+
+Workflow:
+
+
+
+Q:How to intialize a folder/git repository ?
+
+ - git init
+ - This is to allow git to track changes in the folder.
+
+Q: How to add all files into the staging area ?
+ - git add --a
+
+
+Q: git commit
+  This will take a snapshot of all the files
+
+
+Q How to access multiple github accounts from one computer
+
+### SSH KEYS
+
+1. Generate separate SSH keys
+ssh-keygen -t rsa -b 4096 -C "gary391@gmail.com"
+save it as id_rsa_<name>

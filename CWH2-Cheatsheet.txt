@@ -1,0 +1,8 @@
+CWH ATTEMPT 2
+
+tut 7:
+
+1. #
+2. ''' ''' - Multi line comment
+
+INPUT function prompts you to enter a value
