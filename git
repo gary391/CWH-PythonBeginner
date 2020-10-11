@@ -30,6 +30,41 @@ Q: How to add all files into the staging area ?
 Q: git commit
   This will take a snapshot of all the files
 
+Q: How to change the commit author for one specific commit?
+https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit
+git commit --amend --author="Gaurav Yadav <gary391@gmail.com>" --no-edit --> This is command to make the change
+
+A-B-C-D-E-F with F as HEAD, and you want to change the author of C and D, then you would
+1. git rebase -i <B-commit>
+    2. Identify the commit you would like to change in the terminal window
+    3. change pick to edit
+
+        pick 1fc6c95 Patch A
+        pick 6b2481b Patch B
+        pick dd1475d something I want to split
+        pick c619268 A fix for Patch B
+        pick fa39187 something to add to patch A
+        pick 4ca2acc i cant' typ goods
+        pick 7b36971 something to move before patch B
+
+        # Rebase 41a72e6..7b36971 onto 41a72e6
+        #
+        # Commands:
+        #  p, pick = use commit
+        #  r, reword = use commit, but edit the commit message
+        #  e, edit = use commit, but stop for amending
+        #  s, squash = use commit, but meld into previous commit
+        #  f, fixup = like "squash", but discard this commit's log message
+        #  x, exec = run command (the rest of the line) using shell
+        #
+        # If you remove a line here THAT COMMIT WILL BE LOST.
+        # However, if you remove everything, the rebase will be aborted.
+        #
+
+        :wq
+    4. git commit --amend --author="Gaurav Yadav <gary391@gmail.com>" --no-edit
+    5. git rebase --continue
+    6. git push -f (Once done push all the changes)
 
 Q How to access multiple github accounts from one computer
 
