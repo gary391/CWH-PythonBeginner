@@ -1,2 +1,2 @@
 # CWH-PythonBeginner
-List of programs for CWH-PythonBeginner Course
+List of programs from CWH-PythonBeginner Course
