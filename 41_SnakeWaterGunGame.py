@@ -10,6 +10,8 @@ Rules:
 3. Using While loop
 4. First Input is from the user
 5. Use random choice function from the random module.
+# TODO - Handle incorrect inputs
+# TODO - If user and computer enters the same option, before exceeding the total attempts, skip that attempt and continue
 
 '''
 import random
