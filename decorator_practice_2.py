@@ -35,4 +35,4 @@ def add_all(*args):
         total += i
     return total
 
-print(add_all (1,2,3,4, 'gaurav'))
+print(add_all (1,2,3,4, {"gaurav":"The programmer"}))
